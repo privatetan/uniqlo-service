@@ -1,16 +1,52 @@
-# Compiled class file
+# Top-level gitignore for a Maven/Java project
+
+# Ignore build output
+/target/
+
+# Keep Maven wrapper jar tracked but ignore other wrapper artifacts
+!.mvn/wrapper/maven-wrapper.jar
+/.mvn/wrapper/maven-wrapper.jar
+
+# Compiled class files
 *.class
 
-# Log file
+# Logs
 *.log
 
-# BlueJ files
-*.ctxt
+# Temporary files
+*.tmp
+*.swp
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+# OS files
+.DS_Store
 
-# Package Files #
+# IDE files
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+.project
+.classpath
+.settings/
+
+# Eclipse/STS
+.apt_generated
+.factorypath
+.springBeans
+.sts4-cache
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# IntelliJ output
+out/
+
+# Package files
 *.jar
 *.war
 *.nar
@@ -18,7 +54,17 @@
 *.zip
 *.tar.gz
 *.rar
+*.original
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+# Spring Boot
+spring-boot-devtools.properties
+
+# Node (if any)
+node_modules/
+
+# Misc
 hs_err_pid*
 replay_pid*
+
+# Keep README/HELP files tracked
+# (If you want to ignore HELP.md, add it explicitly)
