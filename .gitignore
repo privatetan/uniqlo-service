@@ -1,10 +1,5 @@
-# Top-level gitignore for a Maven/Java project
-
-# Ignore build output
+# Maven
 /target/
-
-# Keep Maven wrapper jar tracked but ignore other wrapper artifacts
-!.mvn/wrapper/maven-wrapper.jar
 /.mvn/wrapper/maven-wrapper.jar
 
 # Compiled class files
@@ -17,54 +12,64 @@
 *.tmp
 *.swp
 
-# OS files
-.DS_Store
-
 # IDE files
 .idea/
 *.iml
-*.iws
-*.ipr
-.vscode/
 .project
 .classpath
 .settings/
+.vscode/
 
-# Eclipse/STS
+# macOS
+.DS_Store
+
+# Eclipse
+/.metadata/
+
+# IntelliJ
+out/
+
+# Spring Boot
+spring-boot-devtools.properties
+
+# Build output
+*.jar
+*.war
+*.ear
+*.original
+
+# Node (if any)
+node_modules/
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
 .apt_generated
+.classpath
 .factorypath
+.project
+.settings
 .springBeans
 .sts4-cache
 
-# NetBeans
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
 
-# IntelliJ output
-out/
-
-# Package files
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
-*.original
-
-# Spring Boot
-spring-boot-devtools.properties
-
-# Node (if any)
-node_modules/
-
-# Misc
-hs_err_pid*
-replay_pid*
-
-# Keep README/HELP files tracked
-# (If you want to ignore HELP.md, add it explicitly)
+### VS Code ###
+.vscode/

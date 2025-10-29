@@ -13,8 +13,11 @@ import java.util.List;
 @NoArgsConstructor
 @Builder
 public class ProductStockRespDTO {
+
     private List<ProductStockDTO> bplList;
+
     private List<ProductStockDTO> skuList;
+
     private List<ProductStockDTO> ekuList;
 
 }

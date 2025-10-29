@@ -12,6 +12,9 @@ import java.util.List;
 @NoArgsConstructor
 @Builder
 public class DetailRespDTO {
-
+    /**
+     * 商品详情
+     */
     List<DetailRowsDTO> rows;
 }
+
